@@ -31,7 +31,7 @@ jobs:
         run: npm run build  # Builds your React app for production
 
       - name: Deploy to Netlify
-        uses: netlify/actions/cli@v2
+        uses: netlify/actions/cli@master
         with:
           netlify_token: ${{ secrets.NETLIFY_TOKEN }}  # Netlify token for authentication (store it in GitHub Secrets)
           site_id: ${{ secrets.NETLIFY_SITE_ID }}  # Your Netlify site ID (store it in GitHub Secrets)
